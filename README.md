@@ -1,6 +1,6 @@
 # Short video recording demo
 
-![demo.gif](https://github.com/ibubue/BPShortVideoSample/demo.gif)
+![demo.gif](https://raw.githubusercontent.com/ibubue/BPShortVideoSample/master/demo.gif)
 
 ## Features
 
@@ -18,33 +18,33 @@
 Sticker resources using zip packing compression, json file configuration, the configuration format is as follows:
 ```
 {
-"fixed_stickers": [
-{
-"sticker_directory": "flower",
-"filename_format": "flower_%zd",
-"frame_count": 100,
-"positionX": 0.5,
-"positionY": 1,
-"anchorpointX": 0.5,
-"anchorpointY": 1,
-"width": 540,
-"height": 200,
-"animation_duration": 5,
-"display_width": 1,
-"display_height": 0
-}
-],
-"face_stickers": [
-{
-"sticker_directory": "cap",
-"filename_format": "cap_%zd",
-"frame_count": 25,
-"face_type": "head",
-"width": 330,
-"height": 220,
-"animation_duration": 3
-}
-]
+    "fixed_stickers": [
+        {
+            "sticker_directory": "flower",
+            "filename_format": "flower_%zd",
+            "frame_count": 100,
+            "positionX": 0.5,
+            "positionY": 1,
+            "anchorpointX": 0.5,
+            "anchorpointY": 1,
+            "width": 540,
+            "height": 200,
+            "animation_duration": 5,
+            "display_width": 1,
+            "display_height": 0
+        }
+    ],
+    "face_stickers": [
+        {
+            "sticker_directory": "cap",
+            "filename_format": "cap_%zd",
+            "frame_count": 25,
+            "face_type": "head",
+            "width": 330,
+            "height": 220,
+            "animation_duration": 3
+        }
+    ]
 }
 
 ```
@@ -65,7 +65,7 @@ Fixed Stickers / Face Stickers | animation_duration | How long to complete one a
 Face Sticker | face_type | Face Recognition Type (face, nose, head, mouth)
 
 # 短视频录制demo
-![demo.gif](https://github.com/ibubue/BPShortVideoSample/demo.gif)
+![demo.gif](https://raw.githubusercontent.com/ibubue/BPShortVideoSample/master/demo.gif)
 
 ## 功能特性
 
@@ -76,7 +76,7 @@ Face Sticker | face_type | Face Recognition Type (face, nose, head, mouth)
 * [x] 编辑添加动态人脸贴纸
 * [x] 多视频合成
 * [x] 多轨道合成
-* [x] 上传后文件预览播放
+* [x] 上传后文件预览播放 
 * [x] 视频转码
 * [x] 自己制作人脸贴纸、动态贴纸
 
@@ -86,38 +86,38 @@ Face Sticker | face_type | Face Recognition Type (face, nose, head, mouth)
 
 ```
 {
-"fixed_stickers": [
-{
-"sticker_directory": "flower",
-"filename_format": "flower_%zd",
-"frame_count": 100,
-"positionX": 0.5,
-"positionY": 1,
-"anchorpointX": 0.5,
-"anchorpointY": 1,
-"width": 540,
-"height": 200,
-"animation_duration": 5,
-"display_width": 1,
-"display_height": 0
-}
-],
-"face_stickers": [
-{
-"sticker_directory": "cap",
-"filename_format": "cap_%zd",
-"frame_count": 25,
-"face_type": "head",
-"width": 330,
-"height": 220,
-"animation_duration": 3
-}
-]
+    "fixed_stickers": [
+        {
+            "sticker_directory": "flower",
+            "filename_format": "flower_%zd",
+            "frame_count": 100,
+            "positionX": 0.5,
+            "positionY": 1,
+            "anchorpointX": 0.5,
+            "anchorpointY": 1,
+            "width": 540,
+            "height": 200,
+            "animation_duration": 5,
+            "display_width": 1,
+            "display_height": 0
+        }
+    ],
+    "face_stickers": [
+        {
+            "sticker_directory": "cap",
+            "filename_format": "cap_%zd",
+            "frame_count": 25,
+            "face_type": "head",
+            "width": 330,
+            "height": 220,
+            "animation_duration": 3
+        }
+    ]
 }
 
 ```
 
-类型 |参数名称| 说明
+ 类型 |参数名称| 说明
 ---|---|---
 固定贴纸/人脸贴纸 | sticker_directory | 贴纸资源所在目录
 固定贴纸/人脸贴纸 | filename_format | 名称格式化
