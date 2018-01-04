@@ -1,0 +1,6 @@
+framework module ShortVideo {
+  umbrella header "ShortVideo-umbrella.h"
+
+  export *
+  module * { export * }
+}
