@@ -1,87 +1,35 @@
-# Short video recording demo
-
-![demo.gif](https://raw.githubusercontent.com/ibubue/BPShortVideoSample/master/demo.gif)
-
-## Features
-
-* [x] Short video recording
-* [x] Record real-time beauty, filters
-* [x] Recording breakpoint continuous shooting, multi-stage synthesis
-* [x] Record background music in real time
-* [x] Edit Add Dynamic Face Sticker
-* [x] Multi-video synthesis
-* [x] Multi-track synthesis
-* [x] File preview playback after upload
-* [x] Video transcoding
-
-## face, dynamic stickers formatting instructions
-Sticker resources using zip packing compression, json file configuration, the configuration format is as follows:
-```
-{
-    "fixed_stickers": [
-        {
-            "sticker_directory": "flower",
-            "filename_format": "flower_%zd",
-            "frame_count": 100,
-            "positionX": 0.5,
-            "positionY": 1,
-            "anchorpointX": 0.5,
-            "anchorpointY": 1,
-            "width": 540,
-            "height": 200,
-            "animation_duration": 5,
-            "display_width": 1,
-            "display_height": 0
-        }
-    ],
-    "face_stickers": [
-        {
-            "sticker_directory": "cap",
-            "filename_format": "cap_%zd",
-            "frame_count": 25,
-            "face_type": "head",
-            "width": 330,
-            "height": 220,
-            "animation_duration": 3
-        }
-    ]
-}
-
-```
-Type | Parameter Name | Description
---- | --- | ---
-Sticker / Face Sticker | sticker_directory | Sticker Resources directory
-Fixed stickers / face stickers | filename_format | name formatting
-Fixed stickers / face stickers | frame_count | number of frames
-Fixed stickers | positionX | coordinate value x (value 0 ~ 1)
-Fixed stickers | positionY | Coordinate value y (value 0 ~ 1)
-Fixed Sticker | anchorpointX | Anchor x (Value 0 ~ 1)
-Fixed Sticker | anchorpointY | Anchor y (Value 0 ~ 1)
-Fixed Sticker / Face Sticker | width | Original Sticker Width
-Fixed stickers / face stickers | height | sticker original height
-Fixed stickers | display_width | Relative width of the display width of the screen (0 is automatic)
-Fixed stickers | display_height | Display height relative to screen height (0 for auto)
-Fixed Stickers / Face Stickers | animation_duration | How long to complete one animation
-Face Sticker | face_type | Face Recognition Type (face, nose, head, mouth)
-
 # 短视频录制demo
-![demo.gif](https://raw.githubusercontent.com/ibubue/BPShortVideoSample/master/demo.gif)
+
+抖音、快手、火山小视频等一系列 App使短视频录制已经成功热门的功能。阿里云短视频 SDK、趣拍云 SDK、涂图 SDK、七牛短视频 SDK等市面上的短视频 SDK 均收费昂贵。
 
 ## 功能特性
 
 * [x] 短视频录制
-* [x] 录制实时美颜，滤镜
-* [x] 录制断点续拍、多段合成
-* [x] 录制实时添加背景音乐
-* [x] 编辑添加动态人脸贴纸
+* [x] 不含第三方收费 SDK，使用 GPUImage 开源框架和科大讯飞免费的离线人脸识别 SDK开发
+* [x] 支持延迟拍摄、录制中拍照、切换摄像头
+* [x] 仿全民 K 歌，原唱伴唱切换，歌词滚动显示
+* [x] 录制实时美颜，滤镜可调节参数、强弱程度
+* [x] 实时切换背景音乐、调整音量
+* [x] 音视频分离录制，防止黑屏
+* [x] 录制断点续拍、多段合成(可实现回删功能)
+* [x] 实时添加动态固定或人脸贴纸
 * [x] 多视频合成
 * [x] 多轨道合成
 * [x] 上传后文件预览播放 
-* [x] 视频转码
-* [x] 自己制作人脸贴纸、动态贴纸
+* [x] 视频转码便于网络传输
+* [x] 自己制作人脸贴纸、动态贴纸，png 序列帧配合 json配置 文件打包(可自主实现加密)，简单易懂
+
+## 操作界面
+
+![demo.gif](https://raw.githubusercontent.com/ibubue/BPShortVideoSample/master/demo.gif)
+
+## 录制效果
+
+![product_demo.gif](https://raw.githubusercontent.com/ibubue/BPShortVideoSample/master/produt_demo.gif)
 
 
-## 人脸、动态贴纸制作格式说明
+## 人脸、动态贴纸制作格式简单说明
+
 贴纸资源采用zip打包压缩制作，json文件配置，配置格式如下：
 
 ```
