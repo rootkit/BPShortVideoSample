@@ -25,7 +25,7 @@
 
 ## 录制效果
 
-![product_demo.gif](https://raw.githubusercontent.com/ibubue/BPShortVideoSample/master/produt_demo.gif)
+![product_demo.gif](https://raw.githubusercontent.com/ibubue/BPShortVideoSample/master/product_demo.gif)
 
 
 ## 人脸、动态贴纸制作格式简单说明
